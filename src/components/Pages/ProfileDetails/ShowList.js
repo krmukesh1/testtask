@@ -65,10 +65,10 @@ export const ShowList = ({ data, handleOpen }) => {
 
               <TableCell align="right">
               <small onClick={prevLoadPage} style={{ cursor: "pointer" ,marginRight:"20px"}}>
-              &lt; Prev
+               Prev
                 </small>   
                 <small onClick={loadPage} style={{ cursor: "pointer" }}>
-                  Next &gt;
+                  Next 
                 </small>
               </TableCell>
             </TableRow>
