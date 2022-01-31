@@ -10,9 +10,6 @@ import {
 
 export const ShowList = ({ data, handleOpen }) => {
   const [page, setPage] = useState(10);
-  const prevLoadPage = () => {
-    setPage((perviousValue) => perviousValue - 10);
-  };
   const loadPage = () => {
     setPage((perviousValue) => perviousValue + 10);
   };
@@ -63,10 +60,7 @@ export const ShowList = ({ data, handleOpen }) => {
               <TableCell></TableCell>
               <TableCell></TableCell>
 
-              <TableCell align="right">
-              <small onClick={prevLoadPage} style={{ cursor: "pointer" ,marginRight:"20px"}}>
-               Prev
-                </small>   
+              <TableCell align="right">  
                 <small onClick={loadPage} style={{ cursor: "pointer" }}>
                   Next 
                 </small>
